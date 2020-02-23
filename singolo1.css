@@ -17,7 +17,6 @@ nav {
 	background-color: #272c38;
 	display: flex;
 	align-items: end;
-
 	justify-content: space-between;
 	padding: 37px 40px 33px;
 }
@@ -38,12 +37,16 @@ nav {
 
 .menu ul {
 	display: flex;
-	padding-left: 30px;
 }
 
 .menu li {
 	list-style: none;
-	padding-left: 28px;
+	padding-left: 12px;
+}
+
+.punto {
+	color: #ffffff;
+	padding-left: 12px;
 }
 
 .menu a {
@@ -105,22 +108,20 @@ nav {
 /* _________________iphone_1_________________ */
 
 .padding_iphone {
-	width: 930px;
+	width: 100%;
 	display: flex;
-	justify-content: space-between ;
-	align-items: center;
-	padding: 55px 80px 82px 50px;
+	padding: 54px 80px 83px 50px;
 }
 
-.iphone.vertical {
-	border-radius: 30px;
+.iphone {
+	border-radius: 28px;
 	background-color: #f1f0ef;
 	display: flex;
 	flex-direction: column;
 	box-shadow: 25px 25px 0px #e06159;
 }
 
-.iphone.vertical > .iphone_led {
+.iphone > .iphone_led {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
@@ -129,7 +130,7 @@ nav {
 	margin: 15px auto 0px;
 }
 
-.iphone.vertical > .iphone_speaker {
+.iphone > .iphone_speaker {
 	width: 36px;
 	height: 5px;
 	border-radius: 3px;
@@ -137,8 +138,8 @@ nav {
 	margin: 10px auto 0px;
 }
 
-.iphone.vertical > .iphone_display {
-	width: 190px;
+.iphone > .iphone_display {
+	width: 193px;
 	height: 340px;
 	border: 3px solid #c8c8c8;
 	border-radius: 4px;
@@ -146,10 +147,10 @@ nav {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin: 20px 12px 0px;
+	margin: 20px 10px 0px;
 }
 
-.iphone.vertical > .iphone_button {
+.iphone > .iphone_button {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -159,8 +160,8 @@ nav {
 }
 
 .iphone .button_square {
-	width: 18px;
-	height: 18px;
+	width: 16px;
+	height: 16px;
 	border-radius: 3px;
 	border: 2px solid #c2c2c2;
 	margin: auto;
@@ -168,50 +169,32 @@ nav {
 
 /* _________________iphone_2_________________ */
 
-.iphone.horizontal {
-	border-radius: 30px;
-	background-color: #f1f0ef;
-	display: flex;
-	flex-direction: row-reverse;
-	box-shadow: 25px 25px 0px #e06159;
+.p_relative{
+	width: 100%;
+	position: relative;
 }
 
-.iphone.horizontal > .iphone_led {
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	border: 2px solid #d8d8d8;
-	background-color: #f45c5f;
-	margin: auto 15px auto 0px;
-}
-
-.iphone.horizontal > .iphone_speaker {
-	width: 5px;
-	height: 36px;
-	border-radius: 3px;
-	background-color: #adacad;
-	margin: auto 10px auto 0px;
+.iphone.horizontal{
+position: absolute;
+transform: rotate(90deg);
+box-shadow: 25px -25px 0px #e06159;
+top: 0%;
+right: 22%;
 }
 
 .iphone.horizontal > .iphone_display {
-	width: 340px;
-	height: 190px;
-	border: 3px solid #c8c8c8;
-	border-radius: 4px;
+	width: 195px;
 	background: url(./assets/iphone_2.png);
-	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	margin: 12px 20px 12px 0px;
 }
 
-.iphone.horizontal > .iphone_button {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: #f9f8f7;
-	margin: auto 8px auto 10px;
-	display: flex;
+.iphone.horizontal > .iphone_speaker {
+	width: 36px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: #adacad;
+	margin: 13px auto 0px;
 }
 
 .line.slider {
@@ -232,7 +215,7 @@ h1 {
 	font-size: 30px;
 	font-family: "Lato";
 	font-weight: 900;
-	color: #636e8b;
+	color: #666D89;
 	line-height: 0.595;
 	padding-bottom: 26px;
 }
@@ -240,39 +223,38 @@ h1 {
 p {
 	font-size: 18px;
 	font-weight: 300;
-	color: #636e8b;
-    line-height: 1.667;
-    word-spacing: 1px;
+	color: #767E9E;
+	line-height: 1.667;
+	word-spacing: 1px;
 }
 
 /* ______________section module________________ */
 
-.section.our_services.modules{
-    padding-bottom: 65px;
+.section.our_services.modules {
+	padding-bottom: 65px;
 }
 
 .container_modules {
 	width: 33.33%;
 }
 .modules {
-    display: flex;
-    padding-bottom: 33px;
+	display: flex;
+	padding-bottom: 33px;
 }
 
-.modules.b{
-    padding-bottom: 0px;
+.modules.b {
+	padding-bottom: 0px;
 }
 
 .icon_module {
 	width: 60px;
 	height: 60px;
-	border: 2px solid #636e8b;
+	border: 2px solid #767E9E;
 	border-radius: 50%;
-    margin: 0px 10px;
-    background-repeat: no-repeat;
+	margin: 0px 10px;
+	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
-    
 }
 
 .paragraph_module {
@@ -284,18 +266,18 @@ p {
 	font-size: 18px;
 	font-weight: 900;
 	line-height: 0.992;
-    color: #636e8b;
-    padding-bottom: 10px;
+	color: #666D89;
+	padding-bottom: 10px;
 }
 
 .paragraph_module p {
 	font-size: 12px;
 	font-weight: 400;
-	color: #636e8b;
-    line-height: 1.797;
-    word-spacing: 1px;
+	color: #767E9E;
+	line-height: 1.797;
+	word-spacing: 1px;
 }
 
-.line.our_services{
-background-color: #ffffff;
+.line.our_services {
+	background-color: #ffffff;
 }
