@@ -135,7 +135,7 @@ nav {
 	height: 5px;
 	border-radius: 3px;
 	background-color: #adacad;
-	margin: 10px auto 0px;
+	margin: 12px auto 0px;
 }
 
 .iphone > .iphone_display {
@@ -178,8 +178,8 @@ nav {
 position: absolute;
 transform: rotate(90deg);
 box-shadow: 25px -25px 0px #e06159;
-top: 0%;
-right: 22%;
+top: 0;
+right: 120px;
 }
 
 .iphone.horizontal > .iphone_display {
@@ -187,14 +187,6 @@ right: 22%;
 	background: url(./assets/iphone_2.png);
 	background-position: center;
 	background-size: cover;
-}
-
-.iphone.horizontal > .iphone_speaker {
-	width: 36px;
-	height: 5px;
-	border-radius: 3px;
-	background-color: #adacad;
-	margin: 13px auto 0px;
 }
 
 .line.slider {
@@ -208,7 +200,7 @@ right: 22%;
 }
 
 .padding_our_services {
-	padding: 70px 10px 47px;
+	padding: 68px 10px 47px;
 }
 
 h1 {
@@ -231,7 +223,7 @@ p {
 /* ______________section module________________ */
 
 .section.our_services.modules {
-	padding-bottom: 65px;
+	padding-bottom: 63px;
 }
 
 .container_modules {
