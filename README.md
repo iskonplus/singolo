@@ -1,2 +1,2 @@
 # singolo
-docs: Create a new repository
+https://iskonplus.github.io/singolo/.
