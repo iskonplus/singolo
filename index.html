@@ -12,25 +12,45 @@
 
 <body>
 
+<!-- --------------------------------- -->
+    
+    <div class="modal" >
+        <div class="form_info">
+            <div class="input_value">
+                <div class="email_sent"><p>Email sent!</p></div>
+                <div><p class="p_subject">Without subject</p></div>
+                <div class="modal_describe"><p class="p_describe">Without describe</p></div>
+            </div>
+            <div class="button">
+                <input type="button" class="modal_button" value="Send">
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------- -->
+
     <!-- _______________________________section header___________________________________  -->
 
     <div class="container">
-        <header>
+        <header >
             <nav>
+                <div class="nav_div">
                 <div class="logo">
                     <a href="#">SINGOLO<span>*</span></a>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">HOME</a><span class="punto">&middot;</span></li>
-                        <li><a href="#">SERVICES</a><span class="punto">&middot;</span></li>
-                        <li><a href="#">PORTFOLIO</a><span class="punto">&middot;</span></li>
-                        <li><a href="#">ABOUT</a><span class="punto">&middot;</span></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#id_home" class="a_active">HOME</a><span class="punto">&middot;</span></li>
+                        <li><a href="#id_our_services">SERVICES</a><span class="punto">&middot;</span></li>
+                        <li><a href="#id_portfolio">PORTFOLIO</a><span class="punto">&middot;</span></li>
+                        <li><a href="#id_about">ABOUT</a><span class="punto">&middot;</span></li>
+                        <li><a href="#id_contact">CONTACT</a></li>
                     </ul>
                 </div>
+            </div>
+
             </nav>
-            <div class="line"></div>
+            <div class="line head"></div>
+
         </header>
 
 
@@ -38,16 +58,18 @@
 
         <main>
 
-            <article class="section slider">
+            <article class="section slider" id="id_home">
                 <div class="padding_triangle_left">
                     <div class="triangle left"></div>
+                    <div class="no_active"></div>
                 </div>
                 <div class="padding_iphone">
+                    <div class="img_slider">
                     <div>
                         <div class="iphone vertical">
                             <div class="iphone_led"></div>
                             <div class="iphone_speaker"></div>
-                            <div class="iphone_display"></div>
+                            <div class="iphone_display "></div>
                             <div class="iphone_button">
                                 <div class="button_square"></div>
                             </div>
@@ -64,8 +86,17 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="slide_2">
+                <div style=" background-image:url(./assets/Slide-2.png)"></div>
+                </div>
+
+
+                </div>
                 <div class="padding_triangle_right">
                     <div class="triangle right"></div>
+                    <div class="no_active"></div>
                 </div>
             </article>
 
@@ -73,7 +104,7 @@
 
             <!-- ____________________________section our_services________________________________  -->
 
-            <article class="section our_services">
+            <article class="section our_services" id="id_our_services">
                 <div class="padding_our_services">
                     <h1>Our Services</h1>
                     <p>
@@ -88,7 +119,7 @@
 
             <!-- _________________________section our_services  modules______________________________  -->
 
-            <article class="section our_services modules">
+            <article class="section our_services modules" id="id_our_services">
 
                 <div class="container_modules">
                     <div class="modules">
@@ -164,7 +195,7 @@
 
             <!-- _________________________section portfolio______________________________  -->
 
-            <article class="section portfolio">
+            <article class="section portfolio" id="id_portfolio">
 
                 <div class="container_portfolio_with_button">
                     <h1>Portfolio</h1>
@@ -182,7 +213,7 @@
                 <div class="container_portfolio_with_img">
 
                     <div class="img_ortfolio">
-                        <div style=" background-image:url(./assets/portfolio_img_1.png)"></div>
+                        <div class = "active"style=" background-image:url(./assets/portfolio_img_1.png)"></div>
                     </div>
                     <div class="img_ortfolio">
                         <div style=" background-image:url(./assets/portfolio_img_2.png)"></div>
@@ -215,7 +246,7 @@
                         <div style=" background-image:url(./assets/portfolio_img_11.png)"></div>
                     </div>
                     <div class="img_ortfolio">
-                        <div style=" background-image:url(./assets/portfolio_img_12.png )"></div>
+                        <div style=" background-image:url(./assets/portfolio_img_12.png)"></div>
                     </div>
 
 
@@ -226,7 +257,7 @@
 
             <!-- _________________________section About Us______________________________  -->
 
-            <article class="section about_Us">
+            <article class="section about_Us" id="id_about">
 
                 <div class="container_about_Us">
                     <h1>About Us</h1>
@@ -288,7 +319,10 @@
 
             <!-- _________________________section Get a Quote______________________________  -->
 
-            <article class="section get_a_Quote">
+
+
+
+            <article class="section get_a_Quote" id="id_contact">
 
                 <div class="container_Quote_text">
                     <h1>Get a Quote</h1>
@@ -302,12 +336,12 @@
                 </div>
                 <div class="container_with_form">
                     <form>
-                        <input type="text" name="name" placeholder="Name" required class="input_form">
-                        <input type="email" name="email" placeholder="email" required class="input_form">
-                        <input type="text" name="text" placeholder="Subject" class="input_form">
+                        <input type="text" name="name" placeholder="Name" class="input_form">
+                        <input type="email" name="email" placeholder="Email" class="input_form">
+                        <input type="text" name="text" placeholder="Subject" class="input_form subject">
                         <textarea name="textarea" rows="12" cols="65" placeholder="Describe your project in detail..."
-                            class="input_form"></textarea>
-                        <input type="submit" class="input_form">
+                            class="input_form describe"></textarea>
+                        <input type="button" value="Submit" class="input_form button">
                     </form>
                     <div class="block_contacts">
                         <div class="contact_info">
@@ -344,9 +378,6 @@
             <!-- _________________________section footer______________________________  -->
 
 
-
-
-
             <footer  class="section footer">
                 <div class="container_footer">
                     <div class="copirait">
@@ -363,6 +394,10 @@
             </footer>
 
     </div>
+
+
+<script src="script.js"></script>
 </body>
+
 
 </html>

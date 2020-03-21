@@ -7,19 +7,33 @@
 
 /* _________________section header_________________ */
 
+html{
+	scroll-behavior: smooth;
+}
+
 .container {
 	width: 100%;
 	max-width: 1020px;
 	margin: auto;
+	position: relative;
 }
 
 nav {
 	width: 100%;
 	background-color: #272c38;
+	padding: 17px 0px 55px;
+	transition: 1s;
+}
+
+.nav_div{
+	width: 1020px;
+	position: fixed;
+	z-index: 2;
 	display: flex;
-	align-items: end;
 	justify-content: space-between;
-	padding: 37px 40px 33px;
+	align-items: center;
+	background:  linear-gradient(to top, #272c3886, #272c38);;
+	padding: 10px 40px ;
 }
 
 .logo > a {
@@ -29,6 +43,7 @@ nav {
 	text-decoration: none;
 	line-height: 0.253;
 }
+
 .logo span {
 	font-size: 25px;
 	color: #f06c64;
@@ -70,6 +85,7 @@ nav {
 	background-color: #2c3445;
 }
 
+
 /* ______________section slider________________ */
 
 .section {
@@ -79,6 +95,10 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0px 30px;
+}
+
+.section.slider{
+	transition: 2s;
 }
 
 .triangle {
@@ -91,11 +111,16 @@ nav {
 	cursor: pointer;
 	transition: .3s;
 }
+
 .padding_triangle_left {
-	padding-left: 15px;
+	padding-left: 10px;
+	position: relative;
+
 }
+
 .padding_triangle_right {
 	padding-right: 10px;
+	position: relative;
 }
 
 .triangle.right {
@@ -110,8 +135,38 @@ nav {
 
 .padding_iphone {
 	width: 100%;
+	padding: 54px 0px 83px;
+	margin: 0px 50px;
+	overflow: hidden;
 	display: flex;
-	padding: 54px 80px 83px 50px;
+	justify-content: space-between;
+	position: relative;
+}
+
+.img_slider{
+	/* width: 100%; */
+	display: flex;
+	left: 0%;
+	transition: 1s;
+	position: relative;
+}
+
+.slide_2{
+	/* width: 100%; */
+	position: relative;
+	bottom: -100%;
+	left: 50%;
+	transition: 1s;
+	margin: auto;
+	opacity: 0;
+}
+
+.slide_2>div{
+	width: 600px;
+	height: 480px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .iphone {
@@ -140,15 +195,15 @@ nav {
 }
 
 .iphone > .iphone_display {
-	width: 193px;
+	width: 195px;
 	height: 340px;
 	border: 3px solid #c8c8c8;
 	border-radius: 4px;
 	background: url(./assets/iphone_1.png);
-	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	margin: 20px 10px 0px;
+	transition: 1s;
 }
 
 .iphone > .iphone_button {
@@ -170,17 +225,12 @@ nav {
 
 /* _________________iphone_2_________________ */
 
-.p_relative {
-	width: 100%;
-	position: relative;
-}
-
 .iphone.horizontal {
-	position: absolute;
+	position: relative;
 	transform: rotate(90deg);
 	box-shadow: 25px -25px 0px #e06159;
 	top: 0;
-	right: 120px;
+	left: 100%;
 }
 
 .iphone.horizontal > .iphone_display {
@@ -287,7 +337,7 @@ h2 {
 .container_portfolio_with_button {
 	width: 100%;
 	margin: 69px 0px 0px;
-	padding: 0px 10px;
+	padding: 0px 10px;	
 }
 
 .container_portfolio_with_button > h1 {
@@ -315,6 +365,8 @@ h2 {
 	margin-right: 9px;
 	cursor: pointer;
 	transition: .3s;
+	outline: 0;
+	outline-offset: 0;
 }
 
 .batton_potfolio > input:hover {
@@ -329,6 +381,7 @@ h2 {
 	flex-wrap: wrap;
 	margin: 10px 0px 68px;
 	overflow: hidden;
+	align-items: center;
 }
 
 .img_ortfolio {
@@ -338,12 +391,20 @@ h2 {
 	background-position: center;
 	background-size: cover;
 }
+
 .img_ortfolio > div {
 	width: 100%;
 	height: 187px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	transition: .5s;
+}
+
+.img_ortfolio > .active {
+border: 5px #FF3A22 solid;
+box-shadow: 0px 0px 20px #000000;
+border-radius: 2px;
 }
 
 .line.portfolio {
@@ -425,7 +486,7 @@ h2 {
 
 .container_Quote_text {
 	width: 100%;
-	margin-top: 69px;
+	margin-top: 68px;
 	padding: 0px 10px;
 }
 
@@ -442,7 +503,7 @@ h2 {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-    margin: 45px 0px 68px;
+    margin: 48px 0px 68px;
     position: relative;
 }
 
@@ -462,6 +523,8 @@ form > .input_form {
 	font-size: 12px;
 	color: #f0d8d9;
 	resize: none;
+	outline: 0;
+	outline-offset: 0;
 }
 
 ::-webkit-input-placeholder {
@@ -513,7 +576,6 @@ form :last-child {
 	background-position: center;
 }
 
-
 /* ___________section footer____________ */
 
 .section.footer{
@@ -537,5 +599,117 @@ form :last-child {
     margin: 22px 0px;
 }
 
+/* ----------js--------------- */
 
-  
+.menu .a_active{
+	color: #f06c64;
+	text-shadow: 1px 1px 3px #000000;
+}
+
+.modal{
+	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-color: #00000088;
+	position: fixed;
+	z-index: 3;
+}
+
+.blur{
+	transition: 2s;
+	filter: blur(5px);
+}
+
+.form_info{
+	width: 40vw;
+	box-shadow: 0px 0px 15px #000000af;
+	padding: 20px;
+	background-color: #ffffff;
+	margin: auto;
+	border-radius: 5px;
+	margin-top: 16%;
+	display: flex;
+	flex-direction: column;
+}
+
+.input_value{
+	max-height: 200px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #2d303a;
+	color: #000000;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.email_sent>p{
+color: #000000;
+font-weight: 600;
+}
+
+.modal_describe{
+	max-height: 150px;
+	margin: 5px 0px;
+	overflow: auto;
+}
+
+.modal_describe::-webkit-scrollbar{
+width: 4px;
+background-color: #d6564f;
+}
+
+.modal_describe::-webkit-scrollbar-thumb{
+	background-color: #2d303a;
+}
+
+.button{
+	margin: auto;
+}
+
+.modal_button{
+	padding: 8px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	outline: 0;
+	outline-offset: 0;
+	background-color: #2d303a;
+	transition: .3s;
+	color:#ffffff;
+}
+
+.modal_button:hover {
+background: #d6564f;
+}
+
+.batton_potfolio > .portfolio_button{
+	color: #dedede;
+	border: 1px solid #dedede;
+}
+
+.iphone>.iphone_display.id{
+	background: #000000;
+}
+
+.section.slider.background{
+	background: #648BF0;
+}
+
+.input_form.required{
+	border: 2px solid #ff2200;
+}
+
+.input_form.requiredOk{
+	border: 2px solid #1d9100;
+}
+
+.no_active{
+	display: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top:-5px;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0);
+}
