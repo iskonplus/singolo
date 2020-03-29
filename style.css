@@ -816,8 +816,6 @@ form :last-child {
 				height: 6px;
 				border-top: 2px solid #e94348;
 				border-left: 2px solid #e94348;
-				border-radius: 2px;
-				transform: rotate(315deg);
 			}
 
 			/* _________________iphone_1_________________ */
@@ -827,7 +825,7 @@ form :last-child {
 				padding: 64px 0px 34px;
 			}
 			.slide_2 > div {
-				padding-left: 190px;
+				padding-left: 200px;
 				padding-bottom: 170px;
 			}
 
@@ -851,7 +849,7 @@ form :last-child {
 			}
 
 			.iphone > .iphone_display {
-				width: 60px;
+				width: 58px;
 				height: 100px;
 				border: 1px solid #c8c8c8;
 				margin: 6px 3px 0px;
@@ -879,7 +877,7 @@ form :last-child {
 			}
 
 			.iphone.horizontal > .iphone_display {
-				width: 65px;
+				width: 58px;
 			}
 
 			/* _________________iphone_2_________________ */
