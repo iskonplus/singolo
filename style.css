@@ -146,7 +146,6 @@ nav {
 }
 
 .img_slider {
-	/* width: 100%; */
 	display: flex;
 	left: 0%;
 	transition: 1s;
@@ -154,7 +153,6 @@ nav {
 }
 
 .slide_2 {
-	/* width: 100%; */
 	position: relative;
 	bottom: -100%;
 	left: 50%;
@@ -164,8 +162,8 @@ nav {
 }
 
 .slide_2 > div {
-	width: 600px;
-	height: 480px;
+	padding-left: 600px;
+	padding-bottom: 480px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -726,6 +724,69 @@ form :last-child {
 			width: 50%;
 		}
 
+		/* _________________iphone_1_________________ */
+
+		.padding_iphone {
+			margin: 0px 25px;
+			padding: 70px 0px 34px;
+
+		}
+		.slide_2 > div {
+			padding-left: 480px;
+			padding-bottom: 380px;
+		}
+
+		.iphone {
+			border-radius: 23px;
+			box-shadow: 20px 20px 0px #e06159;
+		}
+
+		.iphone > .iphone_led {
+			width: 8px;
+			height: 8px;
+			border: 2px solid #d8d8d8;
+			margin: 12px auto 0px;
+		}
+
+		.iphone > .iphone_speaker {
+			width: 30px;
+			height: 3px;
+			border-radius: 3px;
+			margin: 12px auto 0px;
+		}
+
+		.iphone > .iphone_display {
+			width: 135px;
+			height: 235px;
+			border: 2px solid #c8c8c8;
+			margin: 15px 8px 0px;
+			transition: 1s;
+		}
+
+		.iphone > .iphone_button {
+			width: 30px;
+			height: 30px;
+			margin: 7px auto 9px;
+		}
+
+		.iphone .button_square {
+			width: 13px;
+			height: 13px;
+			border-radius: 3px;
+		}
+
+		/* _________________iphone_2_________________ */
+
+		.iphone.horizontal {
+			box-shadow: 20px -20px 0px #e06159;
+		}
+
+		.iphone.horizontal > .iphone_display {
+			width: 135px;
+		}
+
+		/* _________________iphone_2_________________ */
+
 		.img_ortfolio {
 			width: 33.33%;
 		}
@@ -749,6 +810,80 @@ form :last-child {
 			.container_modules {
 				width: 100%;
 			}
+
+			.triangle {
+				width: 6px;
+				height: 6px;
+				border-top: 2px solid #e94348;
+				border-left: 2px solid #e94348;
+				border-radius: 2px;
+				transform: rotate(315deg);
+			}
+
+			/* _________________iphone_1_________________ */
+
+			.padding_iphone {
+				margin: 0px 10px;
+				padding: 64px 0px 34px;
+			}
+			.slide_2 > div {
+				padding-left: 190px;
+				padding-bottom: 170px;
+			}
+
+			.iphone {
+				border-radius: 8px;
+				box-shadow: 10px 10px 0px #e06159;
+			}
+
+			.iphone > .iphone_led {
+				width: 3px;
+				height: 3px;
+				border: 1px solid #d8d8d8;
+				margin: 6px auto 0px;
+			}
+
+			.iphone > .iphone_speaker {
+				width: 12px;
+				height: 1px;
+				border-radius: 2px;
+				margin: 4px auto 0px;
+			}
+
+			.iphone > .iphone_display {
+				width: 60px;
+				height: 100px;
+				border: 1px solid #c8c8c8;
+				margin: 6px 3px 0px;
+				transition: 1s;
+				border-radius: 2px;
+			}
+
+			.iphone > .iphone_button {
+				width: 13px;
+				height: 13px;
+				margin: 3px auto 3px;
+			}
+
+			.iphone .button_square {
+				width: 6px;
+				height: 6px;
+				border-radius: 2px;
+				border: 1px solid #c2c2c2;
+			}
+
+			/* _________________iphone_2_________________ */
+
+			.iphone.horizontal {
+				box-shadow: 10px -10px 0px #e06159;
+			}
+
+			.iphone.horizontal > .iphone_display {
+				width: 65px;
+			}
+
+			/* _________________iphone_2_________________ */
+
 			.container_portfolio_with_img {
 				max-height: 640px;
 			}
@@ -795,19 +930,13 @@ form :last-child {
 				margin-left: 25px;
 			}
 
-			.back_botton {
-				width: 25px;
-				height: 20px;
-				cursor: pointer;
-			}
-
 			.button_menu {
 				width: 25px;
 				height: 2px;
 				border-radius: 2px;
 				background-color: #ffffff;
 				position: relative;
-				top: 35%;
+				top: -10%;
 				transform: rotate(90deg);
 				transition: .5s;
 			}
@@ -875,6 +1004,7 @@ form :last-child {
 
 			.menu li:first-child {
 				padding-top: 24vh;
+				transition: .5s;
 			}
 
 			.menu a {

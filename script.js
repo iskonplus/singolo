@@ -255,11 +255,11 @@ triangRight.addEventListener("click", (event => {
 
     //------------------mobile menu---------------
 
-const backBotton = document.getElementsByClassName("back_botton");
+// const backBotton = document.getElementsByClassName("back_botton");
 const buttonMenu = document.getElementsByClassName("button_menu");
 const logo = document.getElementsByClassName("logo");
 
-backBotton[0].addEventListener("click", (event =>  cliner()))
+buttonMenu[0].addEventListener("click", (event =>  cliner()))
 
 menu[0].addEventListener("click", (event => {
     menuA.forEach(el =>  cliner())
@@ -268,8 +268,10 @@ menu[0].addEventListener("click", (event => {
 
 function cliner() {
     buttonMenu[0].classList.toggle("rotate");
-    menu[0].classList.toggle("none"); 
     navDiv[0].classList.toggle("height"); 
     logo[0].classList.toggle("margin"); 
+    setTimeout(() => {
+    menu[0].classList.toggle("none");
+    }, 150);
 }
 
