@@ -805,6 +805,8 @@ form :last-child {
 		@media (max-width: 375px) {
 			.batton_potfolio > input {
 				padding: 2px 6px;
+				margin: auto;
+				justify-content: space-between;
 			}
 
 			.container_modules {
