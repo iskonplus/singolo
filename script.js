@@ -41,6 +41,7 @@ function onScroll(event) {
                 if (el.getAttribute("id") === a.getAttribute("href").substring(1)) {
 
                     a.classList.add("a_active");
+
                 }
             })
         }
@@ -251,4 +252,24 @@ triangRight.addEventListener("click", (event => {
     }
 
 }))
+
+    //------------------mobile menu---------------
+
+const backBotton = document.getElementsByClassName("back_botton");
+const buttonMenu = document.getElementsByClassName("button_menu");
+const logo = document.getElementsByClassName("logo");
+
+backBotton[0].addEventListener("click", (event =>  cliner()))
+
+menu[0].addEventListener("click", (event => {
+    menuA.forEach(el =>  cliner())
+    
+}))
+
+function cliner() {
+    buttonMenu[0].classList.toggle("rotate");
+    menu[0].classList.toggle("none"); 
+    navDiv[0].classList.toggle("height"); 
+    logo[0].classList.toggle("margin"); 
+}
 
